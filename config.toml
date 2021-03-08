@@ -1,4 +1,4 @@
 # baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Yibin Lin's Reading Blog"
-theme = "PaperMod"
+theme = "github.com/nodejh/hugo-theme-mini"
