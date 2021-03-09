@@ -34,3 +34,9 @@ cover:
 ## BEM Naming Convention
 
 - [BEM cheat sheet](https://css-tricks.com/bem-101/)
+- [RSCSS](https://github.com/rstacruz/rscss) vs. BEM
+
+## Grids
+
+- Grids can overlap if it is explicitly set.
+- z-index can also work on grid cells, changing the overlap order.
