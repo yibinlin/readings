@@ -40,3 +40,6 @@ cover:
 
 - Grids can overlap if it is explicitly set.
 - z-index can also work on grid cells, changing the overlap order.
+- the grid cell can be set to other display patterns, such as: `display: flex` and can be used to center the text vertically:
+  - Look at this [StackOverflow Question](https://stackoverflow.com/questions/8865458/how-do-i-vertically-center-text-with-css#)
+
