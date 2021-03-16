@@ -25,11 +25,17 @@ cover:
 
 ---
 
+
+## General Guideline
+
+- Try to re-build layout of other websites, as practice, etc.
+
 ## Flexbox
 
 - [Flexbox cheat sheet](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - `justify-content` means alignment in the main axis.
 - `align-items` means alignment in the cross axis.
+- Difference between Flex and Grid: Flex is 1-dimensional (and one direction), while grid is for 2-dimensional formatting.
 
 ## BEM Naming Convention
 
@@ -45,3 +51,12 @@ cover:
   - the grid cell can be a grid container too by declaring `display:grid`.
 - Grid settings does not affect fixed-position elements.
   - Therefore we may need to have special empty sections for those fixed-position elements e.g. navigation header bars.
+
+## CSS Transforms
+
+- most used:
+  - `translate()`
+  - `scale()`
+  - `rotate()` - means `rotateZ()` if only one parameter is given.
+  - `skew()`
+- 3D transforms with rotateX / Y
