@@ -42,4 +42,6 @@ cover:
 - z-index can also work on grid cells, changing the overlap order.
 - the grid cell can be set to other display patterns, such as: `display: flex` and can be used to center the text vertically:
   - Look at this [StackOverflow Question](https://stackoverflow.com/questions/8865458/how-do-i-vertically-center-text-with-css#)
-
+  - the grid cell can be a grid container too by declaring `display:grid`.
+- Grid settings does not affect fixed-position elements.
+  - Therefore we may need to have special empty sections for those fixed-position elements e.g. navigation header bars.
