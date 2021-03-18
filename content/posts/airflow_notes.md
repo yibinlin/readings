@@ -1,0 +1,51 @@
+---
+title: "Airflow Study Notes"
+date: 2021-03-17T11:30:03+00:00
+# weight: 1
+# aliases: ["/first"]
+tags: ["Airflow"]
+author: "Yibin Lin"
+# author: ["Me", "You"] # multiple authors
+showToc: true
+TocOpen: false
+draft: false
+hidemeta: false
+comments: false
+description: "Study Notes about Airflow."
+disableHLJS: true # to disable highlightjs
+disableShare: false
+disableHLJS: false
+searchHidden: true
+cover:
+    image: "<image path/url>" # image path/url
+    alt: "<alt text>" # alt text
+    caption: "<text>" # display caption under cover
+    relative: false # when using page bundles set this to true
+    hidden: true # only hide on current single page
+
+---
+
+## 1. Environment
+
+- Vagrant: create and configure lightweight, reproducible dev environments (local Kubernetes cluster)
+
+## 2.1 Basics
+
+### 2.1.1 Concepts
+
+- Operator: describes a single task in your data pipeline.
+- Task: an instance of an operator
+- Workflow: everything defined in Airflow.
+
+### Architecture
+
+- ![architecture diagram](../airflow_architecture.png)
+
+## 2.2 Installation
+
+- Using docker
+  - Docker mysterious image tags, e.g. [slim, buster, etc.](https://stackoverflow.com/questions/54954187/docker-images-types-slim-vs-slim-stretch-vs-stretch-vs-alpine)
+  - `buster` is Debian release names, makes sense..
+  - `Alpine Linux` is a [distro](https://www.reddit.com/r/linux/comments/3mqqtx/alpine_linux_why_no_one_is_using_it/):
+    - > The Alpine Docker image is extremely popular as it is only 5.5MB and includes a package manager with thousands of packages.
+    - Uses `musl`, a relatively new C standard library (therefore occasional compatibility issues).

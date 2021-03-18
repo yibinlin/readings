@@ -60,3 +60,8 @@ cover:
   - `rotate()` - means `rotateZ()` if only one parameter is given.
   - `skew()`
 - 3D transforms with rotateX / Y
+
+## CSS Transitions
+
+- `transition: watch-value DURATION DELAY TIMING-FUNCTION (how to transit);`
+- [Timing functions reference] (https://easings.net/) with in-lie demos.
