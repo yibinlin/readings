@@ -44,6 +44,13 @@ cover:
   - Instead, [Start a sibling container by mounting the Docker socket into the container](https://stackoverflow.com/questions/27879713/is-it-ok-to-run-docker-from-inside-docker)
 
 ## Data Persistency
+
 - [Official Doc](https://docs.docker.com/storage/)
-- > By default all files created inside a container are stored on a writable container layer. 
+- > By default all files created inside a container are stored on a writable container layer.
   - So data is not persisted by default after the container is removed.
+
+## Docker Container Main Process (`ENTRYPOINT` or `CMD`)
+
+- [Doc](https://docs.docker.com/config/containers/multi-service_container/)
+  - > The container’s main process is responsible for managing all processes that it starts. In some cases, the main process isn’t well-designed, and doesn’t handle “reaping” (stopping) child processes gracefully when the container exits. If your process falls into this category, you can use the --init option when you run the container. The --init flag inserts a tiny init-process into the container as the main process, and handles reaping of all processes when the container exits.
+- So, the main process is the root process for a container I think..

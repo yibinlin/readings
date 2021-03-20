@@ -62,3 +62,17 @@ cover:
 - Start new container: `docker run -p 8080:8080 -d airflow-basic`
 - To see stopped containers: `docker ps -a | grep Exit`
 
+## 2.4 Airflow CLI
+
+- `airflow initdb`: do it at start, or after you change the metadata DB.
+- `airflow resetdb`: reset metadata
+- `airflow upgradedb`: upgrades to the latest version.
+  - The same as `airflow initdb` after the first run
+- `airflow webserver -p [port] -w [num_workers]`: webserver instance
+- `airflow scheduler`
+- `airflow worker`
+
+## 2.5 DAGs and CLI
+
+- `airflow list_dags`
+- 
