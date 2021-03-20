@@ -3,13 +3,14 @@ title: "Notes on CSS"
 date: 2021-03-07
 # weight: 1
 # aliases: ["/first"]
-tags: ["first"]
+tags: ["css", "engineering"]
 author: "Yibin Lin"
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
+hideSummary: true
 comments: false
 description: "Notes for my CSS study."
 disableHLJS: true # to disable highlightjs
@@ -64,4 +65,4 @@ cover:
 ## CSS Transitions
 
 - `transition: watch-value DURATION DELAY TIMING-FUNCTION (how to transit);`
-- [Timing functions reference] (https://easings.net/) with in-lie demos.
+- [Timing functions reference](https://easings.net/) with in-lie demos.

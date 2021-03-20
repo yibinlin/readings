@@ -3,13 +3,14 @@ title: "Airflow Study Notes"
 date: 2021-03-17T11:30:03+00:00
 # weight: 1
 # aliases: ["/first"]
-tags: ["Airflow"]
+tags: ["airflow", "engineering"]
 author: "Yibin Lin"
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
+hideSummary: true
 comments: false
 description: "Study Notes about Airflow."
 disableHLJS: true # to disable highlightjs
@@ -49,3 +50,15 @@ cover:
   - `Alpine Linux` is a [distro](https://www.reddit.com/r/linux/comments/3mqqtx/alpine_linux_why_no_one_is_using_it/):
     - > The Alpine Docker image is extremely popular as it is only 5.5MB and includes a package manager with thousands of packages.
     - Uses `musl`, a relatively new C standard library (therefore occasional compatibility issues).
+  - `Ctrl + D` to log out of current su'ed user.
+  - Build the image: `docker build -t airflow-basic .`
+    - Check with `docker image ls`
+  - Run the image: `docker run --rm -d -p 8080:8080 airflow-basic`
+    - `--rm` means Automatically remove the container when it exits.
+
+## 2.3 Airflow UI
+
+- Stop the current docker `docker container stop [Container ID]`
+- Start new container: `docker run -p 8080:8080 -d airflow-basic`
+- To see stopped containers: `docker ps -a | grep Exit`
+
