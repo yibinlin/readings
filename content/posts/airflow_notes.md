@@ -72,7 +72,17 @@ cover:
 - `airflow scheduler`
 - `airflow worker`
 
-## 2.5 DAGs and CLI
+### 2.4.1 DAGs and CLI
 
 - `airflow list_dags`
-- 
+- `airflow trigger_dag`
+- `airflow list_tasks`
+- `airflow list_dag_runs`
+- `airflow test [DAG_ID] [TASK] [Execution_date]`
+
+## 3.1 First DAG
+
+### 3.1.1 Docker
+
+- Avoids debugging process while installation..
+- Because it is standardized, and isolated process.

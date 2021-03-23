@@ -36,6 +36,7 @@ cover:
 ## Stopped Containers
 
 - My guess is that the process is stopped, but the namespace and cgroups, etc. are still saved in case the container can be (re-)started later.
+- `docker start [CONTAINER_ID]` can start the container with the initial setting, e.g. the network port bindings.
 
 ## Docker Container inside a Docker Container
 
@@ -54,3 +55,16 @@ cover:
 - [Doc](https://docs.docker.com/config/containers/multi-service_container/)
   - > The container’s main process is responsible for managing all processes that it starts. In some cases, the main process isn’t well-designed, and doesn’t handle “reaping” (stopping) child processes gracefully when the container exits. If your process falls into this category, you can use the --init option when you run the container. The --init flag inserts a tiny init-process into the container as the main process, and handles reaping of all processes when the container exits.
 - So, the main process is the root process for a container I think..
+
+## DockerFile
+
+- [Example, Illustrated by Marc Lamberti](../example_docker_file.txt)
+
+## Docker Compose
+- vs. Kubernetes?
+  - Kubernetes can run on multiple hosts
+  - Docker Compose is usually one machine (?)
+- Kubernetes vs. Mesos?
+  - Sounds like Mesos are doing multi-host deployment (not only containerized)
+  - Kubernetes focses in containerized deployment (it supports other containers than Docker too).
+
