@@ -2,7 +2,7 @@
 title: "Notes on CSS"
 date: 2021-03-07
 # weight: 1
-# aliases: ["/first"]
+aliases: ["/css"]
 tags: ["css", "engineering"]
 author: "Yibin Lin"
 # author: ["Me", "You"] # multiple authors
