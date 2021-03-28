@@ -61,10 +61,10 @@ cover:
 - [Example, Illustrated by Marc Lamberti](../example_docker_file.txt)
 
 ## Docker Compose
+
 - vs. Kubernetes?
   - Kubernetes can run on multiple hosts
   - Docker Compose is usually one machine (?)
 - Kubernetes vs. Mesos?
   - Sounds like Mesos are doing multi-host deployment (not only containerized)
   - Kubernetes focses in containerized deployment (it supports other containers than Docker too).
-

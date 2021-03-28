@@ -46,3 +46,11 @@ cover:
   - They have a non-inflation (fixed total number) token called Theta token, which governs the issurance of `Tfuel`s (also PoS).
 - Steve Chen (Youtube co-founder, ex-Paypal) is an advisor - doesn't seem to be an investor.
 - [Theta TV Link](https://www.theta.tv)
+
+## DeFi (Decentralized Finance)
+
+- MakerDAO: lending platform, pegged to US dollar.
+- Smart Contract for enforcible terms..
+- Current stage: open source code can be copied, getting competitors easy..
+- Not compliant with KYC and AML (Anti- Money Laundering).
+- Collaterol requirements for "virtual" stock trading not required (for now?)
