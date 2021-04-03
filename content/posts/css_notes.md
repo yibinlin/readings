@@ -79,3 +79,4 @@ cover:
 ## Misc
 
 - for `:hover` sudo selector: on mobile form it doesn't really work - there is no hover, the user just need to tap the element.. Sounds cumbersome..
+- For mobile view, `<meta name="viewport" content="width=device-width, initial-scale=1.0"/>` is very important (gives you the right scale..)
