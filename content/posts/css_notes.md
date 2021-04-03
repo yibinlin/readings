@@ -75,3 +75,7 @@ cover:
   - `backwards` just means the first frame is already applied before the animation actually starts.
   - `forwards` just means the last frame is retained..
   - They do not deal with the animation in-progress, just before the first frame / after the last frame.
+
+## Misc
+
+- for `:hover` sudo selector: on mobile form it doesn't really work - there is no hover, the user just need to tap the element.. Sounds cumbersome..
