@@ -8,7 +8,7 @@ author: "Yibin Lin"
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
-draft: true
+draft: false
 hidemeta: false
 hideSummary: true
 comments: false

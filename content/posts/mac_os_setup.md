@@ -70,7 +70,7 @@ PS1='[\u@\h \W$(__git_ps1 " \[\033[32m\](%s)\[\033[00m\]")]\$ '
 ## Double Pinyin (双拼)
 
 1. 使用Ctrl + space来改变输入法。 Use Ctrl + space to change input source..
-2. 使用Karabiner来把`Shift`键映射为`Ctrl + space`。Use [Karabiner](https://karabiner-elements.pqrs.org/) to support using `Shift` to switch between input sources. 
+2. 使用Karabiner来把`Shift`键映射为`Ctrl + space`。Use [Karabiner](https://karabiner-elements.pqrs.org/) to support using `Shift` to switch between input sources.
     - 以下为映射代码 （需要放在`~/.config/karabiner/karabiner.json`，可能需要先做`Karabiner` UI里面先映射一个`simple modification`，然后`karabiner.json`文件才会被创建。）Code to do that (to be put in `~/.config/karabiner/karabiner.json`, you may need to set a `simple modification` first in `Karabiner` UI, then do this).
     - 更改文件中 `complex_modifications` => `rules` 的内容。You need to change the `complex_modifications` => `rules` as follows:
 
