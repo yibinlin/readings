@@ -1,6 +1,6 @@
 ---
 title: "Crypto Notes"
-date: 2021-03-27
+date: 2021-04-10
 # weight: 1
 aliases: ["/crypto"]
 tags: ["crypto"]
@@ -52,5 +52,5 @@ cover:
 - MakerDAO: lending platform, pegged to US dollar.
 - Smart Contract for enforcible terms..
 - Current stage: open source code can be copied, getting competitors easy..
-- Not compliant with KYC and AML (Anti- Money Laundering).
+- Not compliant with KYC (Know Your Customer) and AML (Anti- Money Laundering).
 - Collaterol requirements for "virtual" stock trading not required (for now?)
