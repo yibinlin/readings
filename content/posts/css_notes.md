@@ -76,6 +76,12 @@ cover:
   - `forwards` just means the last frame is retained..
   - They do not deal with the animation in-progress, just before the first frame / after the last frame.
 
+## Writing Future-proof CSS Code
+
+- [CSS Working Group Docs]()
+  - Draft vs. recommendation
+- Can I use ___? website
+
 ## Misc
 
 - for `:hover` sudo selector: on mobile form it doesn't really work - there is no hover, the user just need to tap the element.. Sounds cumbersome..

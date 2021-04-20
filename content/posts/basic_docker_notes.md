@@ -68,3 +68,9 @@ cover:
 - Kubernetes vs. Mesos?
   - Sounds like Mesos are doing multi-host deployment (not only containerized)
   - Kubernetes focses in containerized deployment (it supports other containers than Docker too).
+
+## Troubleshooting
+
+- Docker container finishes with exit code 137:
+  - It is related to memory, you may want to increase your Docker memory configuration.
+  - details [here](https://www.petefreitag.com/item/848.cfm)
