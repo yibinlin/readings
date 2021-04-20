@@ -126,3 +126,4 @@ Following official tutorial using `docker compose` other than local installation
     3. Cannot trigger a task with the same timestamp (up to second) as an existing task that happened before (you should `clear` that usually):
         - Error message: `Key (dag_id, execution_date)=(tutorial2, 2021-04-16 00:00:00+00) already exists.`
         - However, you can trigger another manual task run even if it is only 1 second difference (e.g. at `2021-04-16 00:00:01+00`)
+6. You can run Airflow command on a `scheduler`, `webserver` and even on a `worker`(?)
