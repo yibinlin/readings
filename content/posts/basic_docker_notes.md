@@ -68,6 +68,15 @@ cover:
 - Kubernetes vs. Mesos?
   - Sounds like Mesos are doing multi-host deployment (not only containerized)
   - Kubernetes focses in containerized deployment (it supports other containers than Docker too).
+- Use docker compose stop if you want to preserve the containers (container stopped other than removed)
+  - Docker compose down removes all the containers..
+
+## Usages
+
+- Start shell in a container:
+  - e.g. `docker exec -it airflow_test_airflow-webserver_1 /bin/bash`
+- Start shell with root user in a container:
+  - e.g. `docker exec -u root -t -i airflow_test_airflow-webserver_1 /bin/bash`
 
 ## Troubleshooting
 

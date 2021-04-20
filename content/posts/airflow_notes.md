@@ -86,3 +86,43 @@ cover:
 
 - Avoids debugging process while installation..
 - Because it is standardized, and isolated process.
+
+## 4 Following Official Tutorial
+
+Following official tutorial using `docker compose` other than local installation.
+
+### 4.1 Specific Issues Encountered in Current Version (2.0.1)
+
+1. Error: WARNING - Exception when importing 'airflow.providers.microsoft.azure.hooks.wasb.WasbHook' from 'apache-airflow-providers-microsoft-azure' package: No module named 'azure.storage.blob'
+    - Solution [here](https://github.com/apache/airflow/issues/14266)
+2. Error: (webserver already started at PID ...)
+    - killall -9 airflow
+3. Error running `backfill` Airflow command
+    - Found issue discussion [here](https://github.com/apache/airflow/issues/14379)
+    - Changing image to python 3.8 version will fix it (originally it was a python 3.6 image)
+
+
+## 4.2 General Issues
+
+1. Error: webserver exited with 137
+    - Increase your Docker memory configuration..
+
+## 4.3 Notes (Learnings)
+
+1. Flower (container)
+    - web based tool for monitoring and administrating Celery clusters. 
+2. Creating a new DAG: DAG name is NOT the file name, it is defined in Python Dag code param..
+    - Similar issue [here](https://stackoverflow.com/questions/45534535/airflow-not-loading-dags-in-usr-local-airflow-dags)
+3. DAG `execution date`
+    - The `execution date` is not the actual DAG run date (there is a DagRun `start date` and `end date` for that)
+    - `execution date` is normally DagRun `start date` - `schedule_interval`, which is the start time of the data being processed (think of ETL)
+    - Can use `{{ ds }}` to find execution date (may not be the same as the `date` command result, which is the actual current date)
+4. Backfill task “deadlocked”
+    - It means the Backfill task `execution date` is later than `Dag end date` of the Dag (defined in Dag definition, note this is not a `DagRun end date,` which is tied to a specific DagRun), or is in the future
+5. Triggering a task
+    1. Cannot trigger a task earlier than its `Dag start date` (defined in Dag, not in a specific Dagrun)
+        - Example error message `The execution date is 2021-04-06T00:00:00+00:00 but this is before the task's start date 2021-04-16T00:00:00+00:00.`.
+    2. Can trigger a task between `Dag start date` and `Dag end date`.
+    3. Cannot trigger a task with the same timestamp (up to second) as an existing task that happened before (you should `clear` that usually):
+        - Error message: `Key (dag_id, execution_date)=(tutorial2, 2021-04-16 00:00:00+00) already exists.`
+        - However, you can trigger another manual task run even if it is only 1 second difference (e.g. at `2021-04-16 00:00:01+00`)
