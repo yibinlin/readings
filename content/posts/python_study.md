@@ -26,7 +26,7 @@ cover:
 
 ---
 
-## Python Type Projects
+## Python Type Objects
 
 - A `type` object = an instance of `type` class = a normal class
   - `type` and `class` are interchangable since Python 2.4
