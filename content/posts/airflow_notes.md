@@ -101,7 +101,6 @@ Following official tutorial using `docker compose` other than local installation
     - Found issue discussion [here](https://github.com/apache/airflow/issues/14379)
     - Changing image to python 3.8 version will fix it (originally it was a python 3.6 image)
 
-
 ## 4.2 General Issues
 
 1. Error: webserver exited with 137
@@ -110,7 +109,7 @@ Following official tutorial using `docker compose` other than local installation
 ## 4.3 Notes (Learnings)
 
 1. Flower (container)
-    - web based tool for monitoring and administrating Celery clusters. 
+    - web based tool for monitoring and administrating Celery clusters.
 2. Creating a new DAG: DAG name is NOT the file name, it is defined in Python Dag code param..
     - Similar issue [here](https://stackoverflow.com/questions/45534535/airflow-not-loading-dags-in-usr-local-airflow-dags)
 3. DAG `execution date`
