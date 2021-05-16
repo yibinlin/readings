@@ -3,7 +3,7 @@ title: "Crypto Notes"
 date: 2021-04-10
 # weight: 1
 aliases: ["/crypto"]
-tags: ["crypto"]
+tags: ["crypto, "nft"]
 author: "Yibin Lin"
 # author: ["Me", "You"] # multiple authors
 showToc: true
@@ -54,3 +54,10 @@ cover:
 - Current stage: open source code can be copied, getting competitors easy..
 - Not compliant with KYC (Know Your Customer) and AML (Anti- Money Laundering).
 - Collaterol requirements for "virtual" stock trading not required (for now?)
+
+## Non-fungible token (NFT)
+
+- Here is a very good [intro article by verge](https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq)
+- It only applies to digital production for now, not for physical assets
+  - Even for digital production, there is no inherent way to prevent an author from e.g. put exactly the same art work in two different URL's, and then sell the two exact the same copy to two different buyers.
+- Most current NFTs are in Ethereum blockchain.

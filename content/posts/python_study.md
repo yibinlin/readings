@@ -3,7 +3,7 @@ title: "Python Study"
 date: 2021-05-01
 # weight: 1
 # aliases: ["/first"]
-tags: ["python"]
+tags: ["python", "pytest"]
 author: "Yibin Lin"
 # author: ["Me", "You"] # multiple authors
 showToc: true
@@ -36,3 +36,8 @@ cover:
     - This is basica building block of Python, and cannot be expressed in Python language.
   - In python everything is an object, so a class is an object (instance) of `type`.
   - For details, see this [StackOverflow Post](https://stackoverflow.com/questions/55775218/why-is-object-an-instance-of-type-and-type-an-instance-of-object)
+
+## Pytest Tips
+
+- Pytest fixtures:
+  - To see all fixtures including 3rd-party fixtures and local-code fixtures: `pytest -q --fixtures`
