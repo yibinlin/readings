@@ -3,7 +3,7 @@ title: "Crypto Notes"
 date: 2021-04-10
 # weight: 1
 aliases: ["/crypto"]
-tags: ["crypto, "nft"]
+tags: ["crypto", "nft"]
 author: "Yibin Lin"
 # author: ["Me", "You"] # multiple authors
 showToc: true
