@@ -26,6 +26,19 @@ cover:
 
 ---
 
+## Basic Concepts and Theory about containers
+
+- Overview of [how docker works](https://stackoverflow.com/questions/16047306/how-is-docker-different-from-a-virtual-machine) ("it is essentially process configuration")
+  - Explains `virutal machines` vs. `containers`.
+- [How can Docker run distros with different kernels?](https://stackoverflow.com/questions/32841982/how-can-docker-run-distros-with-different-kernels)
+  - The second answer (`cjs`'s answer) is great, it points out a case where kernel system calls are not compatible between versions:
+
+> - So what does "compatible enough" mean? It depends on what requests the program makes of the kernel (system calls) and what features it expects the kernel to support. Some programs make requests that will break things; others don't. For example, on an Ubuntu 18.04 (kernel 4.19) or similar host:
+>   - `docker run centos:7` bash works fine.
+>   - `docker run centos:6` bash fails with exit code 139, meaning it terminated with a segmentation violation signal; this is because the 4.19 kernel doesn't support something that build of bash tried to do.
+>   - `docker run centos:6 ls` works fine, because it's not making a request the kernel can't handle, as bash was.
+> - If you try docker run centos:6 bash on an older kernel, say 4.9 or earlier, you'll find it will work fine. (At least as far as I tested it.)
+
 ## History
 
 - Docker was originally built on top of lxc, but later dropped the dependency.
