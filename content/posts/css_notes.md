@@ -78,7 +78,7 @@ cover:
 
 ## Writing Future-proof CSS Code
 
-- [CSS Working Group Docs]()
+- [CSS Working Group Docs](https://www.w3.org/2019/10/css-wg-charter.html)
   - Draft vs. recommendation
 - Can I use ___? website
 

@@ -37,6 +37,13 @@ cover:
   - In python everything is an object, so a class is an object (instance) of `type`.
   - For details, see this [StackOverflow Post](https://stackoverflow.com/questions/55775218/why-is-object-an-instance-of-type-and-type-an-instance-of-object)
 
+## Python Decimal Package
+
+- `quantize()`: The `quantize()` method rounds a number to a fixed exponent.
+  - Basically forces precision level for the current variable..
+  - `a.quantize(Decimal('0.01'))` works, because of the string conversion to exact level of precision
+  - `a.quantize(Decimal(0.01))` does not work (overflows precision), because 0.01 float is not precisely ‘0.01’..
+
 ## Pytest Tips
 
 - Pytest fixtures:
