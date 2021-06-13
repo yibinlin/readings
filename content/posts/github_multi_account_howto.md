@@ -34,6 +34,9 @@ cover:
     - from `git@github.com:username/repo.git`
     - to: `git@github-my-org:username/repo.git`
     - So that a particular repo will use your new key to push to Github.
+  - If `ssh` keeps trying different private keys than the one you specified in `~/.ssh/config`, then you may need:
+    - `IdentitiesOnly yes` in the config to only try the one key file you mentioned.
+    - [Details](https://superuser.com/questions/268776/how-do-i-configure-ssh-so-it-doesnt-try-all-the-identity-files-automatically)
   - But the `.gitconfig` part is not working for me (I have `git 2.30.x`)
     - Still in the local directory git will still use the settings from `git config` command line, not local `./.gitconfig`'s settings.
 - Configure right username and email:
